@@ -9,7 +9,7 @@ This is an individual assessment. All work must be your own. Your challenge scor
 You are not allowed to collaborate during the sprint challenge.
 
 ## Project Set Up
-
+ test 
 - [ ] Fork and clone the repo. Delete your old fork from Github first if you are repeating this Unit.
 - [ ] Open the assignment in Canvas and click on the "Set up git" option.
 - [ ] Follow instructions to set up Codegrade's Webhook and Deploy Key.
@@ -26,7 +26,7 @@ You are going to create a Lambda Newspaper. Your job is going to be to create th
 
 In meeting the minimum viable product (MVP) specifications listed below, your project should look similar to the image linked below:
 
-[Lambda Times](https://tk-assets.lambdaschool.com/cac4803c-6e8f-4846-be0e-b20d82a34a73_lambda-times.png)
+[Lambda Times](np)
 
 ### Instructions
 
@@ -62,10 +62,27 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 
 ## Interview Questions
 
-Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
+Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. 
+You might prepare by writing down your own answers before hand.
 
-1. What is the DOM?
+1. What is the DOM? 
+
+DOM stands for document object model which is API and , its the representation of the document objects by
+the browser
+  
+
 2. What is an event?
+
+Events are the way we users interact with the page. mouse click keyborad, hovering over something and  ...
+
 3. What is an event listener?
-4. Why would we convert a NodeList into an Array?
+
+once an events happens we can track the event using event listeners and by putting an event listener on an element and 
+give it a callback fucntion to do something when the event is triggered.
+
+4. Why would we convert a NodeList into an Array?  
+
+Converting to an Array is necessary to iterate over elements with .fortach or .map and many more arry method 
+
 5. What is a component?
+    Components are reusable codes that we can use to build elements style and functiality  and are used to we can keep our code dry.
