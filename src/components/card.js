@@ -55,7 +55,7 @@ const cardAppender = (selector) => {
   
   axios.get("http://localhost:5000/api/articles")
   .then((response) => {
-    console.log(response)
+    // console.log(response)
     
    const bootstrap = response.data.articles.bootstrap
    bootstrap.forEach((article => {
