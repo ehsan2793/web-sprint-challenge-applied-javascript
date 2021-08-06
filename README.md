@@ -85,4 +85,4 @@ give it a callback function to do something when the event is triggered.
 Converting to an Array is necessary to iterate over elements with .forEach or .map and many more array method 
 
 5. What is a component?
-    Components are reusable codes that we can use to build elements style and functionality   and are used to we can keep our code dry.
+    Components are reusable codes that we can use to build elements style and functionality and are used to we can keep our code dry.

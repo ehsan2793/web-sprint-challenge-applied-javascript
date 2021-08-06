@@ -19,48 +19,17 @@ const Tabs = (topics) => {
   const topic = document.createElement('div');
 
   const div1 = document.createElement('div');
-  const div2 = document.createElement('div')
-  const div3 = document.createElement('div')
- 
-  //delete
-  const div4 = document.createElement('div')
-  const div5 = document.createElement('div')
-  //delete
-const array = [div1, div2, div3,div4,div5];
-const emptyArray = [];
-array.forEach((item , index) => {item.textContent = topics[index];
-emptyArray.push(item);
-})
-
+  
 
   topic.className = 'topics';
   div1.classList.add('tab');
-  div2.classList.add('tab');
-  div3.classList.add('tab');
+ 
+div1.textContent = topics;
+  
+topic.appendChild(div1);
 
-  //delete
-  div4.classList.add('tab');
-  div5.classList.add('tab');
-  //delete
-
-
-//  div1.textContent = topics[0];
-//  div2.textContent = topics[1];
-//  div3.textContent = topics[2];
-
-//  //delete
-//  div4.textContent = topics[3];
-//  div5.textContent = topics[4];
-// //delete 
-
-
- topic.appendChild(div1);
- topic.appendChild(div2);
- topic.appendChild(div3);
-//delete
- topic.appendChild(div4);
- topic.appendChild(div5);
- //delete
+ 
+ 
   return topic
 }
 
@@ -69,8 +38,12 @@ const tabsAppender = (selector) => {
   axios.get('http://localhost:5000/api/topics')
   .then(response => {
     console.log(response);
-    const newTabs = Tabs(response.data.topics)
-    document.querySelector(selector).appendChild(newTabs);
+    response.data.topics.forEach((topic,index) => {
+      const newTabs = Tabs(response.data.topics[index]);
+      document.querySelector(selector).appendChild(newTabs);
+    })
+    
+    
     
       // document.querySelector(selector).appendChild(newTabs);
       
@@ -90,7 +63,7 @@ const tabsAppender = (selector) => {
   // ---------------------
   // Implement this function which takes a css selector as its only argument.
   // It should obtain topics from this endpoint: `http://localhost:5000/api/topics` (test it in Postman/HTTPie!).
-  // Find the array of topics inside the response, and create the tabs using the Tabs component.
+  // Find the array of topics inside the responses, and create the tabs using the Tabs component.
   // Append the tabs to the element in the DOM that matches the selector passed to the function.
   
   
