@@ -17,14 +17,21 @@ const Tabs = (topics) => {
   //
   
   const topic = document.createElement('div');
+
   const div1 = document.createElement('div');
   const div2 = document.createElement('div')
   const div3 = document.createElement('div')
-
+ 
   //delete
   const div4 = document.createElement('div')
   const div5 = document.createElement('div')
   //delete
+const array = [div1, div2, div3,div4,div5];
+const emptyArray = [];
+array.forEach((item , index) => {item.textContent = topics[index];
+emptyArray.push(item);
+})
+
 
   topic.className = 'topics';
   div1.classList.add('tab');
@@ -37,14 +44,14 @@ const Tabs = (topics) => {
   //delete
 
 
- div1.textContent = topics[0];
- div2.textContent = topics[1];
- div3.textContent = topics[2];
+//  div1.textContent = topics[0];
+//  div2.textContent = topics[1];
+//  div3.textContent = topics[2];
 
- //delete
- div4.textContent = topics[3];
- div5.textContent = topics[4];
-//delete 
+//  //delete
+//  div4.textContent = topics[3];
+//  div5.textContent = topics[4];
+// //delete 
 
 
  topic.appendChild(div1);
