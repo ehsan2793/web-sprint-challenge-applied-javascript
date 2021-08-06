@@ -29,7 +29,7 @@ In meeting the minimum viable product (MVP) specifications listed below, your pr
 [Lambda Times](np)
 
 ### Instructions
-
+te
 - [ ] Navigate to the root of the project with your command line.
 - [ ] Run `npm install` to download the dependencies listed in the `package.json` file.
 - [ ] Run `npm start` to compile the project and serve it.
