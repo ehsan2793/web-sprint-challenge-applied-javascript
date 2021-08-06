@@ -73,16 +73,16 @@ the browser
 
 2. What is an event?
 
-Events are the way we users interact with the page. mouse click keyborad, hovering over something and  ...
+Events are the way we users interact with the page. mouse click keyboard, hovering over something and  ...
 
 3. What is an event listener?
 
 once an events happens we can track the event using event listeners and by putting an event listener on an element and 
-give it a callback fucntion to do something when the event is triggered.
+give it a callback function to do something when the event is triggered.
 
 4. Why would we convert a NodeList into an Array?  
 
-Converting to an Array is necessary to iterate over elements with .fortach or .map and many more arry method 
+Converting to an Array is necessary to iterate over elements with .forEach or .map and many more array method 
 
 5. What is a component?
-    Components are reusable codes that we can use to build elements style and functiality  and are used to we can keep our code dry.
+    Components are reusable codes that we can use to build elements style and functionality   and are used to we can keep our code dry.
