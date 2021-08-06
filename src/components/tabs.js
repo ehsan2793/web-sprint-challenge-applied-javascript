@@ -11,7 +11,7 @@ div0.classList.add('tab')
 
 
 topic.appendChild(div0);
-
+return topic
 
 
   // TASK 3
@@ -28,7 +28,7 @@ topic.appendChild(div0);
   //   <div class="tab">technology</div>
   // </div>
   //
-  return topic
+  
 }
 
 
